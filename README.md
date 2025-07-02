@@ -1,4 +1,9 @@
 ## Log Monitoring System (Version 1.0)
+![Python](https://img.shields.io/badge/python-3.6%2B-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Made with ❤️ by codebyperfect](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F%20by%20codebyperfect-001f3f)
+
+
 A command-line based dynamic log analyzer built to parse `.log` files, extract key entries, categorize logs by level, and generate clean output reports.
 
 ## Features of 'dynamic_log_analyser.py'
@@ -51,27 +56,23 @@ log_monitoring_system/
    ```bash
    python3 dynamic_log_analyser.py
    ```	
-2. **Enter full path of a log file**
-   Example input:
-   Enter full path of the log file to analyze: /var/log/cron
-
-3. Output files will be saved:
-   
-   In a directory named based on the input file:
+2. **Enter full path of a log file, for example:**
+   ```
+   /var/log/cron
+   ```
+4. **Output files will be saved, in a directory named based on the input file.**
 ---
-
-
 # Retrieving sample cron logs (sudo priviledge required)
 ```bash
 $ sudo python3 dynamic_log_analyser.py 
 ```
-Enter full path of the log file to analyze: /var/log/cron
+**Enter full path of the log file to analyze:** ```/var/log/cron```
 
 # Retrieving sample dnf logs
 ```bash 
 $ python3 dynamic_log_analyser.py 
 ```
-Enter full path of the log file to analyze: /var/log/dnf.log
+**Enter full path of the log file to analyze:** ```/var/log/dnf.log```
 
 ---
 # Sample Generated logs
@@ -99,7 +100,7 @@ core_parser/
 # Sample Summary of cron Logs
 ```
 Summary of Logs
-----------------------------------------------------------------------------------------------------
+---------------------------------
 Analyzed Log File: /var/log/cron
 Total Log Lines : 243
 Debug Log Lines : 0
@@ -110,7 +111,7 @@ Other Log Lines : 243
 # Sample Summary of dnf Logs
 ```
 Summary of Logs
-----------------------------------------------------------------------------------------------------
+-----------------------------------
 Analyzed Log File: /var/log/dnf.log
 Total Log Lines : 4229
 Debug Log Lines : 3458
@@ -120,11 +121,12 @@ Other Log Lines : 233
 ```
 ---
 # Author
-Md Nabil Hossain
+**Md Nabil Hossain**
+
 Computer Engineer | Linux & Python Enthusiast
 - Email: mdnabil.cse@gmail.com
-- Portfolio: Coming Soon
 - GitHub: [codebyperfect](https://github.com/codebyperfect)
+- Portfolio: Coming Soon
 ---
 
 ## License
