@@ -1,0 +1,11 @@
+1. Line:12 -> WARNING | Date:2025-06-11, Time:21:40:43+0600 => Failed determining last makecache time.
+2. Line:1321 -> WARNING | Date:2025-06-12, Time:13:31:22+0600 => Errors during downloading metadata for repository 'appstream':
+3. Line:1355 -> CRITICAL | Date:2025-06-12, Time:13:31:22+0600 => Error: Failed to download metadata for repo 'appstream': Cannot download repomd.xml: Curl error (28): Timeout was reached for https://mirror.dc.uz/rocky/9.6/AppStream/x86_64/os/repodata/repomd.xml [Operation too slow. Less than 1000 bytes/sec transferred the last 30 seconds]
+4. Line:2126 -> WARNING | Date:2025-06-19, Time:23:12:05+0600 => Errors during downloading metadata for repository 'baseos':
+5. Line:2160 -> CRITICAL | Date:2025-06-19, Time:23:12:05+0600 => Error: Failed to download metadata for repo 'baseos': Cannot prepare internal mirrorlist: Curl error (6): Couldn't resolve host name for https://mirrors.rockylinux.org/mirrorlist?arch=x86_64&repo=BaseOS-9 [Could not resolve host: mirrors.rockylinux.org]
+6. Line:3131 -> dnf.exceptions.PackagesNotAvailableError(_("Unable | Date:raise, Time:N/A => to find a match"),
+7. Line:3133 -> CRITICAL | Date:2025-06-26, Time:15:57:35+0600 => Error: Unable to find a match: pip3
+8. Line:3167 -> dnf.exceptions.PackagesNotAvailableError(_("Unable | Date:raise, Time:N/A => to find a match"),
+9. Line:3169 -> CRITICAL | Date:2025-06-26, Time:15:57:40+0600 => Error: Unable to find a match: pipe
+10. Line:3807 -> WARNING | Date:2025-07-01, Time:13:23:43+0600 => Errors during downloading metadata for repository 'baseos':
+11. Line:3843 -> CRITICAL | Date:2025-07-01, Time:13:23:43+0600 => Error: Failed to download metadata for repo 'baseos': Yum repo downloading error: Downloading error(s): repodata/91a5798c-7dc9-4dab-99f9-f30fb52ec301-PRIMARY.xml.gz - Download failed: Status code: 404 for http://mirror.twds.com.tw/rockylinux/9.6/BaseOS/x86_64/os/repodata/91a5798c-7dc9-4dab-99f9-f30fb52ec301-PRIMARY.xml.gz (IP: 103.147.22.36)

@@ -1,0 +1,8 @@
+📊 Summary of Logs
+--------------------------------------------------
+Analyzed Log File: /var/log/dnf.log
+Total Log Lines : 4229
+Debug Log Lines : 3458
+Info Log Lines  : 447
+Error Log Lines : 11
+Other Log Lines : 233
