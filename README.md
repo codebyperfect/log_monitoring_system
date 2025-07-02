@@ -1,4 +1,4 @@
-## Log Monitoring System (Version 1.0)
+# Log Monitoring System (Version 1.0)
 ![Python](https://img.shields.io/badge/python-3.6%2B-blue)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Made with ❤️ by codebyperfect](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F%20by%20codebyperfect-001f3f)
@@ -20,24 +20,7 @@ A command-line based dynamic log analyzer built to parse `.log` files, extract k
 - Automatically names output folders and files
 - Handles malformed lines and empty logs gracefully
 ---
-
-# Project Structure
-```
-log_monitoring_system/
-├── core_parser/
-│   ├── dynamic_log_analyser.py # Main CLI log parser
-│   ├── readme.md # Module-level doc
-│   └── sample_logs/ # Sample test logs (cron & dnf)
-├── ip_alert_module/
-│   └── ip_tracker.py # (Upcoming) Suspicious IP tracker
-├── dashboard/
-│   └── live_web_ui.py # (Upcoming) Web UI (Flask-based)
-├── docs/
-│   └── architecture.md # Design plan & module notes
-├── LICENSE/
-```
----
-# Concepts Used
+## Concepts Used
 - File I/O
 - String manipulation & log parsing
 - Categorization logic
@@ -45,12 +28,12 @@ log_monitoring_system/
 - CLI interaction
 - Exception handling
 ---
-# Requirements
+## Requirements
 - Python 3.6 or higher
 - Linux-based system (tested on CentOS/RHEL/Fedora)
 - No external libraries required (pure Python)
 ---
-# How to Use
+## How to Use
 + **Make sure Python3 is installed on your system.**
 
 1. **Run the script**  
@@ -63,42 +46,49 @@ log_monitoring_system/
    ```
 4. **Output files will be saved, in a directory named based on the input file.**
 ---
-# Retrieving sample cron logs (sudo priviledge required)
+## Testing the Software
+### Retrieving sample cron logs (sudo priviledge required)
 ```bash
 $ sudo python3 dynamic_log_analyser.py 
 ```
-**Enter full path of the log file to analyze:** ```/var/log/cron```
++ Enter full path of the log file to analyze: ```/var/log/cron```
 
-# Retrieving sample dnf logs
+### Retrieving sample dnf logs
 ```bash 
 $ python3 dynamic_log_analyser.py 
 ```
-**Enter full path of the log file to analyze:** ```/var/log/dnf.log```
++ Enter full path of the log file to analyze: ```/var/log/dnf.log```
 
 ---
-# Sample Generated logs
+## Project Structure along with sample generated logs
 ```
-core_parser/
-├── cron_logs
-│   ├── cron_debug.log
-│   ├── cron_error.log
-│   ├── cron_info.log
-│   ├── cron_other.log
-│   └── cron_summary.txt
-├── dnf_logs
-│   ├── dnf_debug.log
-│   ├── dnf_error.log
-│   ├── dnf_info.log
-│   ├── dnf_other.log
-│   └── dnf_summary.txt
-├── dynamic_log_analyser.py
-├── readme.md
-├── LICENSE
-
+log_monitoring_system/
+├── core_parser
+│   ├── cron_logs  # Sample test logs (cron)
+│   │   ├── cron_debug.log
+│   │   ├── cron_error.log
+│   │   ├── cron_info.log
+│   │   ├── cron_other.log
+│   │   └── cron_summary.txt
+│   ├── dnf_logs  # Sample test logs (dnf)
+│   │   ├── dnf_debug.log
+│   │   ├── dnf_error.log
+│   │   ├── dnf_info.log
+│   │   ├── dnf_other.log
+│   │   └── dnf_summary.txt
+│   ├── dynamic_log_analyser.py  # Main CLI log parser
+│   └── readme.md
+├── dashboard
+│   └── live_web_ui.py  # (Upcoming) Web UI (Flask/Django-based)
+├── docs
+│   └── architecture.md  # Design plan & module notes
+├── ip_alert_module
+│   └── ip_tracker.py  # (Upcoming) Suspicious IP tracker
+└── LICENSE
 ```
 ---
 
-# Sample Summary of cron Logs
+### Sample Summary of cron Logs
 ```
 Summary of Logs
 ---------------------------------
@@ -109,7 +99,7 @@ Info  Log Lines : 0
 Error Log Lines : 0
 Other Log Lines : 243
 ```
-# Sample Summary of dnf Logs
+### Sample Summary of dnf Logs
 ```
 Summary of Logs
 -----------------------------------
@@ -122,8 +112,7 @@ Other Log Lines : 233
 ```
 ---
 # Author
-**Md Nabil Hossain**
-
+## Md Nabil Hossain
 Computer Engineer | Linux & Python Enthusiast
 - Email: mdnabil.cse@gmail.com
 - GitHub: [codebyperfect](https://github.com/codebyperfect)
