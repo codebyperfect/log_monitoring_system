@@ -1,0 +1,8 @@
+📊 Summary of Logs
+--------------------------------------------------
+Analyzed Log File: /var/log/cron
+Total Log Lines : 243
+Debug Log Lines : 0
+Info Log Lines  : 0
+Error Log Lines : 0
+Other Log Lines : 243
