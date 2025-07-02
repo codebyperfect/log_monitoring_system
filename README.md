@@ -125,3 +125,6 @@ This project is licensed under the [MIT License](LICENSE). See the LICENSE file 
 ## Contributing
 Feel free to fork the repo, suggest improvements, or open issues.
 Your feedback and contributions are always welcome!
+
+## Releases
+- [Version 1.0](https://github.com/codebyperfect/log_monitoring_system/releases/tag/v1.0) - Stable release with CLI log analyzer features.
