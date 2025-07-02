@@ -31,7 +31,6 @@ log_monitoring_system/
 │   └── architecture.md # Design plan & module notes
 ```
 ---
-
 # Concepts Used
 - File I/O
 - String manipulation & log parsing
@@ -40,9 +39,13 @@ log_monitoring_system/
 - CLI interaction
 - Exception handling
 ---
-
+# Requirements
+- Python 3.6 or higher
+- Linux-based system (tested on CentOS/RHEL/Fedora)
+- No external libraries required (pure Python)
+---
 # How to Use
-+ **Make sure Python 3 is installed on your system.**
++ **Make sure Python3 is installed on your system.**
 
 1. **Run the script**  
    ```bash
@@ -116,12 +119,6 @@ Error Log Lines : 11
 Other Log Lines : 233
 ```
 ---
-# Requirements
-- Python 3.6 or higher
-- Linux-based system (tested on CentOS/RHEL/Fedora)
-- No external libraries required (pure Python)
----
-
 # Author
 Md Nabil Hossain
 Computer Engineer | Linux & Python Enthusiast
