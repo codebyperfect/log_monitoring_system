@@ -34,6 +34,7 @@ log_monitoring_system/
 │   └── live_web_ui.py # (Upcoming) Web UI (Flask-based)
 ├── docs/
 │   └── architecture.md # Design plan & module notes
+├── LICENSE/
 ```
 ---
 # Concepts Used
